@@ -1,0 +1,106 @@
+.price-content {
+	.block {
+		padding-top: 35px;
+		.title {
+			display: inline-block;
+			position: relative;
+			font-size: 30px;
+			line-height: 50px;
+			margin-bottom: 30px;
+			&::before {
+		    	position: absolute;
+		    	content: '';
+		    	width: 48px;
+		    	height: 3px;
+		    	bottom: 23px;
+	    		right: -75px;
+		    	background: @blue;
+			}
+		}
+		table {
+			margin-bottom: 5px;
+			tr {
+				th {
+					padding: 22px 30px;
+					&:last-child {
+						width: 210px;
+					}
+				}
+				td {
+					padding: 25px 30px 20px;
+					vertical-align: top;
+					&:last-child {
+						width: 210px;
+					}
+					.main-text {
+						margin: 0;
+						margin-bottom: 4px;
+						font-size: 15px;
+						line-height: 20px;
+					}
+					.sub-text {
+						margin: 0;
+						margin-bottom: 8px;
+						font-size: 13px;
+						line-height: 22px;
+					}
+					.price {
+						margin: 0;
+						font-weight: 600;
+						font-size: 14px;
+						line-height: 20px;
+					}
+				}
+			}
+		}
+	}
+	.doc {
+		padding-top: 60px;
+		padding-bottom: 53px;
+		.title {
+			display: inline-block;
+			position: relative;
+			margin-bottom: 26px;
+			&::before {
+		    	position: absolute;
+		    	content: '';
+		    	width: 48px;
+		    	height: 3px;
+		    	right: -67px;
+				bottom: 17px;
+		    	background: @blue;
+			}
+		}
+		.list-ul {
+			margin: 0;
+			margin-bottom: 20px;
+			.list-item {
+				position: relative;
+				padding-left: 39px;
+				padding-bottom: 5px;
+				&::before {
+			    	position: absolute;
+			    	content: '';
+			    	width: 18px;
+			    	height: 24px;
+			    	top: -1px;
+					left: 1px;
+			    	background-image: url("../img/doc.png");
+				    background-repeat: no-repeat;
+				    background-position: center;
+			    }
+			    .doc-title {
+					margin: 0;
+			    }
+			    .doc-link {
+			    	font-size: 13px;
+					line-height: 25px;
+					text-decoration: none;
+					&:hover {
+						text-decoration: underline;
+					}
+			    }
+			}
+		}
+	}
+}

@@ -1,0 +1,89 @@
+.jumbotron .jumbotron__slider {
+  margin: 0;
+}
+.jumbotron {
+  min-height: 480px;
+  position: relative;
+  & .wrapper {
+    height: 100%;
+  }
+  &-btn {
+    text-transform: none;
+    border-radius: 15px;
+    font-size: 15px;
+    line-height: 15px;
+  }
+  &__slider {
+    height: 100%;
+    min-height: 480px;
+    &-text {
+      padding-right: 61%;
+      & .title {
+        font-size: 50px;
+        line-height: 50px;
+        font-weight: 600;
+        color: #fff;
+        margin: 0;
+        margin-top: 70px;
+        margin-bottom: 13px;
+      }
+      & .subtitle {
+        font-size: 16px;
+        line-height: 25px;
+        color: #fff;
+        margin: 0;
+        margin-bottom: 43px;
+      }
+    }
+    & .slide {
+      position: relative;
+      height: 480px;
+      &-img {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        min-height: 480px;
+        max-width: initial;
+        min-width: 100%;
+      }
+    }
+  }
+  .slick-dots {
+    position: absolute;
+    bottom: 28px;
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+  
+    li {
+      margin: 0;
+      width: 23px;
+      button::before {
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.5);
+        color: transparent;
+        width: 8px;
+        height: 8px;
+        opacity: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%; -50%);
+      }
+      button:hover::before {
+        background-color: rgb(255, 255, 255);
+      }
+      &.slick-active {
+        width: 33px;
+        button::before {
+          border-radius: 8px;
+          background-color: rgb(255, 255, 255);
+          width: 28px;
+          height: 8px;
+        } 
+      }
+    } 
+  }
+}

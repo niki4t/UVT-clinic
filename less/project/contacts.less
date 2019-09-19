@@ -1,0 +1,193 @@
+.contacts-content {
+	h1 {
+		margin-top: 75px;
+	}
+	.main-info {
+		position: relative;
+		padding-top: 6px;
+		padding-bottom: 35px;
+		&::before {
+	    	position: absolute;
+	    	content: '';
+	    	width: 48px;
+	    	height: 3px;
+	    	bottom: 0;
+    		left: 0;
+	    	background: @blue;
+	    }
+		.inner-wrap {
+			text-align: left;
+			margin-bottom: 15px;
+			.icon {
+				display: inline-block;
+				vertical-align: top;
+				margin-right: 14px;
+			}
+			.text-wrap {
+				display: inline-block;
+				padding-top: 3px;
+				max-width: 280px;
+				.title {
+					font-size: 20px;
+					line-height: 30px;
+					font-weight: 600;
+					margin: 0;
+					&[href]:hover {
+						text-decoration: underline;
+					}
+				}
+				.desc {
+					font-size: 13px;
+					line-height: 13px;
+					margin: 0;
+				}
+			}
+		}
+	}
+	.map-timetable {
+		padding-top: 40px;
+		padding-bottom: 69px;
+		.contacts-map {
+			margin-top: 10px;
+		}
+		.inner-wrap {
+			.title {
+				color: @blue;
+				margin: 0;
+				margin-bottom: 22px;
+			}
+			.timetable {
+				tr {
+					background: none;
+					border: none;
+					border-top: 1px dashed rgba(24, 42, 50, 0.2);
+					td {
+						position: relative;
+						border: none;
+						padding: 5px 0 4px;
+						.time-img {
+							position: absolute;
+							left: 6px;
+							top: 50%;
+							transform: translateY(-50%);
+						}
+						&:first-child {
+							font-size: 12px;
+							line-height: 20px;
+							font-weight: 600;
+							text-align: left;
+							padding-left: 40px;
+						}
+						&:last-child {
+							text-align: right;
+						}
+					}
+				}
+				.work {
+					td {
+						&:last-child {
+							font-size: 15px;
+							line-height: 30px;
+							font-weight: 600;
+						}
+					}
+				}
+				.relax {
+					td {
+						&:first-child::before {
+							position: absolute;
+							content: '';
+							width: 11px;
+							height: 2px;
+							left: 8px;
+							top: 50%;
+							transform: translateY(-50%);
+							background: @blue;
+						}
+						&:last-child {
+							font-size: 13px;
+							line-height: 30px;
+							font-weight: 300;
+						}
+					}
+				}
+			}
+		}
+
+	}
+	.contacts-form {
+		background: @lightgrey;
+		padding-top: 55px;
+		padding-bottom: 51px;
+		.title {
+			font-size: 30px;
+			padding-bottom: 30px;
+			margin-bottom: 41px;
+			border-bottom: 1px dashed rgba(24, 42, 50, 0.2);
+		}
+		& label, & p {
+			font-size: 15px;
+			line-height: 20px;
+			font-weight: 500;
+			display: block;
+			margin: 0;
+			margin-bottom: 8px;
+			& span {
+				padding-left: 5px;
+			}
+		}
+		& input {
+			margin-top: 4px;
+			margin-bottom: 20px;
+			padding-top: 9px;
+			padding-bottom: 9px;
+			display: block;
+			width: 100%;
+			border-color: rgb(217, 225, 229);
+			&::placeholder {
+				color: rgba(24, 42, 50, 0.5);
+			}
+		}
+		& textarea {
+			margin-top: 4px;
+			margin-bottom: 24px;
+			display: block;
+			width: 100%;
+			height: 93px;
+			border-color: #d9e1e5;
+			&::placeholder {
+				color: rgba(24, 42, 50, 0.5);
+			}
+		}
+		& .checkbox__text {
+			padding: 0 0 0 42px;
+			cursor: pointer;
+			font-weight: 300;
+			font-size: 15px;
+			line-height: 17px;
+			text-align: left;
+			margin-top: 31px;
+			margin-bottom: 50px;
+			&::before {
+				border-color: rgb(217, 225, 229);
+				top: 0;
+				bottom: 0;
+				margin: auto;
+				width: 32px;
+				height: 32px;
+				border-radius: 10px;
+			}
+		}
+		.btns {
+			float: right;
+			margin-top: 19px;
+			.btn-form {
+				padding: 12px 17px;
+				img {
+					margin-right: 17px;
+					vertical-align: bottom;
+				}
+			}
+		}
+	}
+}

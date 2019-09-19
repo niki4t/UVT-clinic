@@ -1,0 +1,119 @@
+.timetable-content {
+	h1 {
+		position:relative;
+		margin-top: 0;
+	    margin-bottom: 45px;
+	    padding-top: 53px;
+	    border-top: 1px dashed rgba(24, 42, 50, 0.2);
+	    &::before {
+	    	position: absolute;
+	    	content: '';
+	    	width: 48px;
+	    	height: 3px;
+	    	bottom: 23px;
+    		left: 45%;
+	    	background: @blue;
+	    }
+	}
+	table {
+		color: @grey;
+		margin-bottom: 130px;
+		tr {
+			th {
+				width: 12.8%;
+				padding: 30px 22px;
+				border: none;
+				border-right: 1px solid rgba(24, 42, 50, 0.07);
+				border-left: 1px solid rgba(24, 42, 50, 0.07);
+				background: @blue;
+				font-size: 12px;
+				font-weight: 600;
+				color: #fff;
+				&:first-child {
+					width: 36%;
+					text-align: left;
+				}
+			}
+			td {
+				width: 12.8%;
+				padding: 20px 14px;
+				text-align: center;
+				vertical-align: middle;
+				border: 1px solid rgba(24, 42, 50, 0.07);
+				&:first-child {
+					width: 36%;
+					text-align: left;
+					padding-left: 29px;
+					padding-right: 148px;
+				}
+				.worker-item {
+					.worker-img {
+						display: inline-block;
+						width: 60px;
+						height: 60px;
+						border-radius: 50%;
+						margin-right: 17px;
+						vertical-align: top;
+					}
+					.worker-text {
+						display: inline-block;
+						text-align: left;
+						.worker-title {
+							color: @blue;
+							margin: 0;
+						}
+						.worker-desc {
+							font-size: 13px;
+							line-height: 17px;
+							margin: 0;
+						}
+					}
+				}
+				&:not(:first-child) {
+					cursor: pointer;
+					transition: 0.3s;
+					&:hover {
+						color: #fff;
+						background: @darkblue;
+						.links-order {
+							font-size: 12px;
+							line-height: 15px;
+							border-radius: 14px;
+							padding: 4px 7px;
+							margin: 0;
+							height: 28px;
+							width: auto;
+							text-transform: none;
+							background-color: @darkblue;
+							border: 2px solid rgba(255, 255, 255, 0.3);
+							img {
+								margin-right: 6px;
+								vertical-align: bottom;
+							}
+						}
+						.time {
+							font-size: 17px;
+						}
+					}
+				}
+				.links-order {
+					background-image: none;
+				    font-size: 0;
+				    padding: 4px;
+				    width: 24px;
+				    height: 24px;
+				    margin-bottom: 4px;
+				}
+				.time {
+					font-size: 14px;
+					line-height: 41px;
+					font-weight: 600;
+					margin: 0;
+				}
+				a {
+				    text-decoration: none;
+				}
+			}
+		}
+	}
+}

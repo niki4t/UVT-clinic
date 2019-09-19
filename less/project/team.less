@@ -1,0 +1,303 @@
+.team-content {
+	h1 {
+		position: relative;
+		margin-top: 75px;
+	    margin-bottom: 20px;
+	    padding-bottom: 35px;
+	    &::before {
+	    	position: absolute;
+	    	content: '';
+	    	width: 48px;
+	    	height: 3px;
+	    	bottom: 0;
+    		left: 0;
+	    	background: @blue;
+	    }
+	}
+	.worker-list {
+		padding-top: 31px;
+		padding-bottom: 40px;
+		.inner-container {
+			text-align: center;
+			margin-bottom: 79px;
+			a:hover {
+				.worker-title {
+					color: @blue;
+				}
+			}
+			.worker-img {
+				border-radius: 50%;
+			}
+			.worker-title {
+				padding: 0 33px;
+				margin-top: 19px;
+				margin-bottom: 3px;
+				transition: 0.3s;
+			}
+			.worker-desc {
+				margin-top: 0;
+				font-size: 12px;
+				line-height: 20px;
+			}
+		}
+	}
+}
+.team-detail-content {
+	&>div:nth-child(2n) {
+		background: @lightgrey;
+	}
+	.main {
+		padding-bottom: 48px;
+		.border-top {
+			padding-top: 37px;
+			border-top: 1px dashed rgba(24, 42, 50, 0.2);
+			.worker-img {
+				border-radius: 50%;
+			}
+			.name {
+				font-size: 30px;
+				line-height: 50px;
+				margin-top: 21px;
+				margin-bottom: 0;
+			}
+			.spec {
+				position: relative;
+				margin: 0;
+				padding-bottom: 38px;
+				&::before {
+			    	position: absolute;
+			    	content: '';
+			    	width: 48px;
+			    	height: 3px;
+			    	bottom: 0;
+		    		left: 0;
+			    	background: @blue;
+			    }
+			}
+			.desc {
+				font-size: 15px;
+				line-height: 25px;
+				margin-top: 32px;
+    			margin-bottom: 40px;
+			}
+			.timetable-link {
+				font-size: 14px;
+				line-height: 18px;
+				border-radius: 20px;
+				padding-left: 51px;
+				padding-right: 26px;
+				background-image: url("../img/calendar-white.png");
+			    background-repeat: no-repeat;
+			    background-position: 16px center;
+			    margin-bottom: 35px;
+			}
+			.list-title {
+				
+			}
+			.list-ul {
+				margin-top: 21px;
+    			margin-bottom: 37px;
+				width: 52%;
+				.list-item {
+					position: relative;
+					padding-left: 36px;
+					font-size: 15px;
+					line-height: 20px;
+					margin-bottom: 10px;
+					&::before {
+				    	position: absolute;
+				    	content: '';
+				    	width: 16px;
+				    	height: 11px;
+				    	top: 5px;
+			    		left: 0;
+				    	background-image: url("../img/tick-w.png");
+					    background-repeat: no-repeat;
+					    background-position: center;
+				    }
+				}
+			}
+		}
+	}
+	.documents {
+		padding-top: 47px;
+		padding-bottom: 45px;
+		.title {
+			position: relative;
+			padding-bottom: 17px;
+			&::before {
+		    	position: absolute;
+		    	content: '';
+		    	width: 48px;
+		    	height: 3px;
+		    	bottom: 0;
+	    		left: 0;
+		    	background: @blue;
+		    }
+		}
+		.list-ul {
+			margin-top: 27px;
+			.list-item {
+				position: relative;
+				padding-left: 37px;
+				padding-bottom: 5px;
+				&::before {
+			    	position: absolute;
+			    	content: '';
+			    	width: 18px;
+			    	height: 24px;
+			    	top: -1px;
+					left: 2px;
+			    	background-image: url("../img/doc.png");
+				    background-repeat: no-repeat;
+				    background-position: center;
+			    }
+			    .doc-title {
+					margin-bottom: 3px;
+			    }
+			    .doc-link {
+			    	font-size: 13px;
+					line-height: 25px;
+					text-decoration: underline;
+					&:hover {
+						text-decoration: none;
+					}
+			    }
+			}
+		}
+	}
+	.education {
+		padding-top: 47px;
+		padding-bottom: 49px;
+		.title {
+			position: relative;
+			padding-bottom: 17px;
+			&::before {
+		    	position: absolute;
+		    	content: '';
+		    	width: 48px;
+		    	height: 3px;
+		    	bottom: 0;
+	    		left: 0;
+		    	background: @blue;
+		    }
+		}
+		.list-ul {
+			margin-top: 27px;
+			padding-right: 15px;
+			.list-item {
+				position: relative;
+				padding-left: 39px;
+				padding-bottom: 14px;
+				&::before {
+			    	position: absolute;
+			    	content: '';
+			    	width: 24px;
+			    	height: 20px;
+			    	top: 0;
+					left: 0;
+			    	background-image: url("../img/study.png");
+				    background-repeat: no-repeat;
+				    background-position: center;
+			    }
+			    .educ-title {
+					margin-bottom: 6px;
+			    }
+			    .educ-desc {
+			    	font-size: 15px;
+					line-height: 25px;
+					margin: 0;
+			    }
+			}
+		}
+	}
+	.experience {
+		padding-top: 47px;
+		padding-bottom: 53px;
+		.title {
+			position: relative;
+			padding-bottom: 17px;
+			&::before {
+		    	position: absolute;
+		    	content: '';
+		    	width: 48px;
+		    	height: 3px;
+		    	bottom: 0;
+	    		left: 0;
+		    	background: @blue;
+		    }
+		}
+		.list-ul {
+			margin-top: 27px;
+			padding-right: 15px;
+			.list-item {
+				position: relative;
+				padding-left: 39px;
+				padding-bottom: 14px;
+				&::before {
+			    	position: absolute;
+			    	content: '';
+			    	width: 17px;
+			    	height: 20px;
+			    	top: -2px;
+					left: 2px;
+			    	background-image: url("../img/flag.png");
+				    background-repeat: no-repeat;
+				    background-position: center;
+			    }
+			    .exp-title {
+					margin-bottom: 6px;
+			    }
+			    .exp-desc {
+			    	font-size: 15px;
+					line-height: 25px;
+					margin: 0;
+			    }
+			}
+		}
+	}
+	.сongresses {
+		padding-top: 47px;
+		padding-bottom: 70px;
+		.title {
+			position: relative;
+			padding-bottom: 17px;
+			&::before {
+		    	position: absolute;
+		    	content: '';
+		    	width: 48px;
+		    	height: 3px;
+		    	bottom: 0;
+	    		left: 0;
+		    	background: @blue;
+		    }
+		}
+		.list-ul {
+			margin-top: 27px;
+			.list-item {
+				position: relative;
+				padding-left: 39px;
+				padding-bottom: 14px;
+				&::before {
+			    	position: absolute;
+			    	content: '';
+			    	width: 20px;
+			    	height: 24px;
+			    	top: -4px;
+					left: 0;
+			    	background-image: url("../img/conf.png");
+				    background-repeat: no-repeat;
+				    background-position: center;
+			    }
+			    .con-title {
+					margin-bottom: 6px;
+			    }
+			    .con-desc {
+			    	font-size: 15px;
+					line-height: 25px;
+					margin: 0;
+			    }
+			}
+		}
+	}
+}

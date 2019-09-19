@@ -1,0 +1,91 @@
+table {
+  color: #505050;
+  width: 100%;
+  & .table__detail-btn {
+    background: #e2e1e1;
+    padding: 7px 30px 7px 15px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    font-size: 12px;
+    position: relative;
+    text-decoration: none;
+    &:after {
+      content: url("../img/arr-l.png");
+      position: absolute;
+      right: 12px;
+      top: 6px;
+    }
+    &:hover
+    {
+      background: lightgrey;
+    }
+  }
+  & tr {
+    border-bottom: 1px solid #e5e5e6;
+    &:first-child {
+      border-top: 1px solid #3c3c3d;
+    }
+
+  }
+  & th {
+    font-size: 11px;
+    line-height: 20px;
+    font-weight: 500;
+    text-align: center;
+    padding: 15px 3px;
+    text-transform: uppercase;
+  }
+  & td {
+    font-size: 12px;
+    padding: 19px 0;
+    line-height: 20px;
+    font-weight: 300;
+    text-align: left;
+    vertical-align: text-bottom;
+    border-right: none;
+    & a {
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+table {
+    color: @grey;
+    tr {
+      &:first-child {
+        border: none;
+      }
+      &:nth-child(2n+1) {
+        background: #fbfbfb;
+      }
+      th {
+        padding: 30px 22px;
+        border: none;
+        border-right: 1px solid rgba(24, 42, 50, 0.07);
+        border-left: 1px solid rgba(24, 42, 50, 0.07);
+        background: @blue;
+        font-size: 12px;
+        font-weight: 600;
+        color: #fff;
+        &:first-child {
+          text-align: left;
+        }
+      }
+      td {
+        padding: 20px 14px;
+        text-align: center;
+        vertical-align: middle;
+        border: 1px solid rgba(24, 42, 50, 0.07);
+        &:first-child {
+          text-align: left;
+        }
+        a {
+            text-decoration: none;
+        }
+      }
+    }
+  }

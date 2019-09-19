@@ -1,0 +1,567 @@
+.navbar {
+  transition: 0.5s;
+  margin: 0;
+  padding-top: 43px;
+  .header-info {
+    display: inline-block;
+    padding-top: 4px;
+    .address {
+      display: inline-block;
+      margin-right: 53px;
+      .address-btn {
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 12px;
+        width: 34px;
+        height: 34px;
+        background-image: url("../img/placeholder.png");
+        &:hover {
+          color: @blue;
+        }
+      }
+      .address-text {
+        display: inline-block;
+        padding-top: 10px;
+        .address-title {
+          margin: 0;
+          margin-bottom: 4px;
+          font-size: 16px;
+          line-height: 18px;
+        }
+        .address-desc {
+          margin: 0;
+          font-size: 13px;
+          line-height: 15px;
+          .address-span {
+            font-weight: 600;
+            color: @blue;
+          }
+        }
+      }
+    }
+    .tel {
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 44px;
+      .tel-btn {
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 12px;
+        width: 34px;
+        height: 34px;
+        background-image: url("../img/phone.png");
+        &:hover {
+          color: @blue;
+        }
+      }
+      .tel-text {
+        display: inline-block;
+        .tel-phone {
+          display: block;
+          font-size: 25px;
+          line-height: 32px;
+          font-weight: 600;
+          color: @blue;
+          transition: 0.3s;
+          &:hover {
+            color: @darkblue;
+          }
+        }
+        .tel-orderCall {
+          display: block;
+          font-size: 13px;
+          line-height: 15px;
+          text-decoration: underline;
+          transition: 0.3s;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  .eye {
+    font-size: 0;
+    vertical-align: top;
+    display: inline-block;
+    margin-top: 10px;
+    transition: 0.3s;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+  .header-btmBtn {
+    float: right;
+    font-size: 10px;
+    line-height: 14px;
+    padding-left: 50px;
+    background-image: url("../img/pencil-black.png");
+    background-position: 20px center;
+    background-repeat: no-repeat;
+  }
+}
+
+.header {
+  &-top {
+    margin-bottom: 27px;
+    .logo {
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 189px;
+      transition: 0.3s;
+      img {
+        display: inline-block;
+        margin-right: 11px;
+      }
+      .logo-text {
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 7px;
+        h3 {
+          margin: 0;
+          font-size: 25px;
+          line-height: 26px;
+        }
+        p {
+          margin: 0;
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 18px;
+        }
+      }
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+
+  &-btm  {
+    padding-bottom: 13px;
+    .header-btm__wrapper {
+      border-top: 1px dashed rgb(24, 42, 50);
+      padding-top: 17px;
+      .header-menu {
+        display: inline-block;
+        margin: 0;
+        vertical-align: middle;
+        & li {
+          display: inline-block;
+          font-size: 15px;
+          line-height: 20px;
+          font-weight: 500;
+          margin-right: 45px;
+          transition: 0.2s;
+          position: relative;
+          &:hover {
+            color: @blue;
+          }
+          &.active-link {
+            color: @blue;
+          }
+        }
+        & li:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+    .drop-menu {
+      padding-right: 18px;
+      transition: 0.3s;
+      &::before {
+        position: absolute;
+        content: "";
+        width: 8px;
+        height: 6px;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background-image: url("../img/v.png");
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      &:hover::before {
+        transform: rotate(180deg);
+      }
+    }
+    .submenu-block {
+      padding: 24px 17px 31px 12px;
+      width: 278px;
+      position: absolute;
+      background-color: @blue;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 99;
+      top: 35px;
+      left: 4px;
+      &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 50%;
+        left: -10px;
+        top: -20px;
+        height: 20px;
+      }
+      .submenu {
+        padding: 11px;
+        position: relative;
+        li {
+          display: block;
+          margin-bottom: 21px;
+          font-size: 15px;
+          line-height: 19px;
+          font-weight: 400;
+          color: #fff;
+          padding-left: 20px;
+          margin-right: 0;
+          &::before {
+            content: '•';
+            color: #fff;
+            left: 4px;
+            font-size: 20px;
+            position: absolute;
+          }
+          &:hover {
+            color: #ccc;
+            &::before {
+              color: #ccc;
+            }
+          }
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+    .drop-menu a {
+      position: relative;
+    }
+    .drop-menu:hover .submenu-block {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+  
+
+
+.mobile-close {
+  display: none;
+  position: absolute;
+  right: 25px;
+  top: 20px;
+}
+.mobile-toggle {
+  position: absolute;
+  right: 22px;
+  top: -4px;
+  display: none;
+  z-index: 100;
+}
+.btn_mob {
+  width: 14px;
+  padding: 15px 0 11px;
+  margin: 0;
+  float: right;
+  cursor: pointer;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.btn_mob span {
+  background: #000;
+  height: 2px;
+  display: block;
+  margin: 0 0 2px;
+  left: 0;
+  width: 100%;
+  position: relative;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -ms-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+  transition: 0.3s linear;
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.btn_mob.open span:nth-child(1) {
+  top: 4px;
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.btn_mob.open span:nth-child(2) {
+  width: 0;
+  left: 50%;
+}
+.btn_mob.open span:nth-child(3) {
+  top: -4px;
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+
+@media screen and (max-width: 1220px) {
+  .navbar {
+    .header-info .tel ,
+    .header-info .address {
+      margin-right: 20px;
+    }
+    .header-info .tel .tel-btn,
+    .header-info .address .address-btn {
+      margin-right: 3px;
+    }
+    .header-btmBtn {
+      background-image: none;
+      padding: 13px 17px;
+    }
+  }
+  .header-top {
+    .logo {
+      margin-right: 20px;
+    }
+  }
+  .header-btm {
+    .header-btm__wrapper {
+      .header-menu li {
+        margin-right: 13px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 991px) {
+  .navbar {
+    padding: 0;
+    overflow: scroll;
+    .header-info {
+      padding-top: 32px;
+      .address {
+        display: block;
+        margin: 0;
+        margin-bottom: 11px;
+        .address-btn {
+          display: inline-block;
+          width: 30px; 
+          height: 30px; 
+          margin-right: 16px;
+          background-color: #fff;
+          vertical-align: top;
+          background-image: url(../img/placeholder-blue.png);
+        }
+        .address-text {
+          padding-top: 6px;
+          .address-title {
+            font-size: 14px;
+            line-height: 16px;
+            margin: 0;
+            margin-bottom: 7px;
+          }
+          .address-desc {
+            font-size: 12px;
+            line-height: 14px;
+          }
+        }
+      }
+      .tel {
+        display: block;
+        margin: 0;
+        .tel-btn {
+          display: inline-block;
+          width: 30px; 
+          height: 30px; 
+          margin-right: 16px;
+          background-color: #fff;
+          vertical-align: top;
+          background-image: url(../img/phone-blue.png);
+        }
+        .tel-text {
+          .tel-phone {
+            font-size: 20px;
+            line-height: 22px;
+            margin-bottom: 8px;
+          }
+          .tel-orderCall {
+            font-size: 12px;
+            line-height: 14px;
+          }
+        }
+      }
+    } 
+    .eye {
+      font-size: 14px;
+      line-height: 45px;
+      padding-bottom: 10px;
+      border-bottom: 1px dashed rgb(24, 42, 50);
+      img {
+        vertical-align: middle;
+        margin-right: 15px;
+      }
+    }
+    .header-btmBtn {
+      float: none;
+      font-size: 10px;
+      line-height: 14px;
+      padding-left: 50px;
+      background-image: url("../img/pencil-black.png");
+      background-position: 20px center;
+      background-repeat: no-repeat;
+      margin-bottom: 5px;
+    }
+    .drop-menu .mobile-more {
+      width: 40px;
+      height: 20px;
+      position: absolute;
+      top: -3px;
+      left: -54px;
+      text-align: center;
+    }
+  }
+  .header-top {
+    position: relative;
+    padding-top: 17px;
+    padding-bottom: 8px;
+    margin-bottom: 0;
+    .header-top-wrapper {
+      position: relative;
+    }
+    .logo {
+      img {
+        width: 63px;
+        height: auto;
+        margin-right: 5px;
+      }
+      .logo-text {
+        margin-top: 4px;
+        h3 {
+          margin: 0;
+          font-size: 18px;
+          line-height: 20px;
+        }
+        p {
+          margin: 0;
+          font-size: 9px;
+          line-height: 12px;
+        }
+      }
+    }
+  }
+  .header-btm {
+    display: none;
+    padding-bottom: 0;
+    overflow: scroll;
+    text-align: left;
+    margin: 0;
+    position: fixed;
+    top: 70px;
+    right: 0;
+    background: #fff;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    box-shadow: inset 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+    .header-btm__wrapper {
+      overflow: scroll;
+      border-top: none;
+      padding: 9px 33px 95px 5px;
+      .header-menu {
+        padding: 16px 0 13px 50px;
+        width: 100%;
+        border-bottom: 1px dashed rgb(24, 42, 50);
+        li {
+          display: block;
+          margin: 20px 0;
+          &:hover {
+            color: @grey;
+          }
+          &.active-link {
+            color: @grey;
+          }
+        }
+      }
+    }
+    .drop-menu {
+      padding-right: 0;
+      transition: 0.3s;
+      &::before {
+        display: none;
+      }
+    }
+    .submenu-block {
+      padding: 17px 12px;
+      width: 100%;
+      position: inherit;
+      background: transparent;
+      opacity: 1;
+      visibility: visible;
+      top: 0;
+      left: 0;
+      padding: 0;
+      padding-left: 15px;
+      margin-bottom: 8px;
+      &::after {
+        display: none;
+      }
+      .submenu {
+        display: none;
+        padding: 0;
+        position: relative;
+        li {
+          display: block;
+          margin: 15px 0;
+          font-size: 15px;
+          line-height: 19px;
+          font-weight: 400;
+          color: inherit;
+          padding-left: 0;
+          &:before {
+            display: none;
+          }
+          &:hover {
+            color: inherit;
+          }
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+    .drop-menu a {
+      position: relative;
+    }
+    .drop-menu:hover .submenu-block {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  .header-top .header-info,
+  .header-top .eye,
+  .header-btmBtn {
+    display: none;
+  }
+  .mobile-toggle {
+    display: block;
+  }
+  .active-block {
+    display: block !important;
+  }
+  .active-inline-block {
+    display: inline-block !important;
+  } 
+}
+
+
+
+
+
+
