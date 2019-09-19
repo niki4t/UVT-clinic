@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Клиника ЮВТ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/slick/slick-theme.css" rel="stylesheet" type="text/css" media="all"/>
+    <link rel="stylesheet" href="css/foundation/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="css/foundation/daterangepicker.css"/>
+    <link href="css/slick/slick.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="css/foundation/selectric.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="css/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+</head>
+<body>
+<div class="nobg">
+
+    <nav class="navbar">
+        <div class="header-top">
+            <div class="wrapper header-top-wrapper">
+                <a class="logo" href="index.html">
+                    <img src="img/logo.png">
+                    <div class="logo-text">
+                        <h3>Клиника ЮВТ</h3>
+                        <p>Офтальмологический центр</p>
+                    </div>
+                </a>
+                <div class="header-info">
+                    <div class="address">
+                        <div class="moreBtn address-btn"></div>
+                        <div class="address-text">
+                            <p class="address-title">СПб, ул. Мытнинская д.1/20</p>
+                            <p class="address-desc">Выходные —<span class="address-span"> Ср, Сб, Вс</span></p>
+                        </div>
+                    </div>
+                    <div class="tel">
+                        <div class="moreBtn tel-btn"></div>
+                        <div class="tel-text">
+                            <a class="tel-phone" href="tel:+7 (812) 409-40-92">(812) 409-40-92</a>
+                            <a class="tel-orderCall" href="#call-modal" data-toggle="modal">Заказать звонок</a>
+                        </div>
+                    </div>
+                </div>
+                <a class="eye" href="#"><img src="img/eye.png">Версия для слабовидящих</a>
+                <div class="mobile-toggle">
+                    <div class="btn_mob">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-btm">
+            <div class="wrapper">
+                <div class="header-btm__wrapper">
+                    <ul class="header-menu">
+                        <li class="drop-menu">
+                            <a href="about.html">О клинике</a>
+                            <div class="submenu-block">
+                                <ul class="submenu">
+                                    <li><a href="about_medicalInfo.html">О медицинской деятельности</a></li>
+                                    <li><a href="about_documents.html">Нормативные документы</a></li>
+                                    <li><a href="#">Правила внутреннего распорядка</a></li>
+                                    <li><a href="#">О правах и обязанностях граждан в сфере охраны здоровья</a></li>
+                                    <li><a href="jobs.html">Вакансии</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="drop-menu">
+                            <a href="services.html">Услуги</a>
+                            <div class="submenu-block">
+                                <ul class="submenu">
+                                    <li><a href="services_category.html">Лечение катаракты</a></li>
+                                    <li><a href="services_category.html">Лечение глаукомы</a></li>
+                                    <li><a href="services_category.html">Лечение астигматизма</a></li>
+                                    <li><a href="services_category.html">Лечение пресбиотии</a></li>
+                                    <li><a href="services_category.html">Лечение гиперметропии</a></li>
+                                    <li><a href="services_category.html">Замена хрусталика</a></li>
+                                    <li><a href="services_category.html">Имплантация факичных линз</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="team.html">Наши специалисты</a></li>
+                        <li><a href="timetable.html">Расписание приема</a></li>
+                        <li><a href="price.html">Стоимость</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                    <a class="btn lightgrey-btn header-btmBtn" href="#appointment-modal" data-toggle="modal">Записаться на прием</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+
+    <div class="page-content about-content about-articles_detail-content">
+        <div class="wrapper">
+            <div class="border-top">
+                <h1>Бионический глаз — мифы и реальность</h1>
+                <h6 class="date">21 / 05 / 2019</h6>
+                <div class="publ-main">
+                    <div class="row list">
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <div class="inner-container">
+                                <img class="publ-mainImg" src="img/articles_detail.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <div class="inner-container">
+                                <p class="publ-mainText">Можете ли вы представить себе, что чувствует человек, который не видит или почти не видит окружающий мир? Такое состояние называется слепотой – невозможностью воспринимать зрительные стимулы из-за патологических нарушений в самом глазу, в зрительных нервах или в мозге.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="publ-desc">
+                    <p class="text">В 1972 году Всемирная Организация Здравоохранения (ВОЗ) приняла следующее определение: человек считается слепым, если острота центрального зрения в условиях максимальной коррекции не превышает 3/60. При таком зрении человек в условиях дневного освещения с максимальной коррекцией оптики неспособен сосчитать пальцы с расстояния в 3 метра. <br><br>Так вот для таких случаев была предложена идея электрической стимуляции сетчатки или зрительной коры, создание протеза, который по механизму действия имитирует настоящие процессы передачи электрических сигналов. <br><br>Вариантов электронных имплантов несколько, каждый год появляются новые идеи, но термин и сам «Бионический глаз» (Bionic Eye) разработан Дэниелом Паланкером, сотрудником Стэнфордского университета и его научной группой «Биомедицинской физики и офтальмологических технологий». <br><br>Имплантация модели бионического глаза Argus II (кстати, единственной модели, имеющей ЕС марку, но не сертифицированной в России) была выполнена в России в июле 2017 года одному пациенту. И со всех источников телевещания мы услышали – теперь человек сможет увидеть мир как раньше. Сотни людей просят поставить бионический глаз, а некоторые вдобавок просят «вживить» чипы для суперзрения. <br><br>Так что же мы на сегодняшний день имеем и может ли стать явью мечта увидеть мир после того, как потерял зрение?</p>
+                    <h3 class="title">Биологические аспекты протезирования сетчатки</h3>
+                    <p class="text">Бионическими называют протезы и имплантируемые элементы частей организма человека, которые подобны по внешнему виду и функциям на настоящие органы или конечности. На сегодняшний день людям успешно помогают в полноценной жизни бионические руки, ноги, сердца, а также органы слуха. Цель создания электронного глаза — помочь слабовидящим с проблемами сетчатки или зрительного нерва. Имплантируемые вместо поврежденной сетчатки устройства должны заменить миллионы клеток фоторецепторов глаза, пусть не на все 100%. <br><br>Технология для глаз похожа на ту, которая используется в слуховых протезах, помогающим глухим людям слышать. Благодаря ей пациенты имеют меньше шансов потерять остаточное зрение, а утратившие зрение — видеть свет и иметь хоть какую-то способность ориентироваться в пространстве самостоятельно.</p>
+                    <img class="img" src="img/articles_detail-cont-1.png" alt="">
+                    <h3 class="title">Технологические аспекты</h3>
+                    <p class="text">Общий принцип действия электронного глаза следующий: в специальные очки встраивается миниатюрная камера, с нее информация об изображении передается в девайс, который преобразует картинку в электронный сигнал и отсылает его на специальный передатчик, который в свою очередь посылает электронный сигнал на имплантированный в глаз или в мозг приёмник, или информация передается через крошечный проводок на электроды, присоединенные к сетчатке глаза, они стимулируют оставшиеся нервы сетчатки, посылая электрические импульсы в головной мозг через оптические нервы. Устройство призвано компенсировать утраченные зрительные ощущения при полной или неполной потере зрения.</p>
+                    <h5 class="ul-title">Главные условия успешной работы системы:</h5>
+                    <ol class="list-ol">
+                        <li class="list-item">Наличие в глазу и мозгу пациента части живых нервных клеток.</li>
+                        <li class="list-item">Пациентами должны быть люди, которые когда-то нормально видели, так как тот, кто слепой от рождения, пользоваться такими устройствами не сможет. Подходят люди, долгое время видевшие и имеющие богатый зрительный опыт. В результате они мало видят, но имеют представления о предметах и догадываются что это за предмет. Короче, должна быть развита кора головного мозга и обладание достаточным интеллектом.</li>
+                        <li class="list-item">И, понятно, чем больше пикселей будет в чипе, тем четче будет полученное изображение.
+                            <img src="img/articles_detail-cont-2.png" alt="">
+                        </li>
+                        <li class="list-item">Длительный срок эксплуатации – пока срок использования этих устройств никто не знает. Первая имплантация бионических глаз в Германии закончилась тем, что их через год всем пациентам удалили. Даже тем, кто что-то видел. Об этом даже в прессе Германии писали.</li>
+                        <li class="list-item">Технологичный способ подзарядки. Сейчас они работают по принципу индукции, не на батарейках. Заряжаются как электрическая зубная щетка. </li>
+                        <li class="list-item">Попутно должен решаться вопрос окисления, нагрева и т.п. Например, дырчатая конструкция после имплантации может позволить нервным клеткам сетчатки автоматически перетекать с верхней и нижней поверхностей фотодатчика через полости и соединяться, а также уменьшить нагрев пикселей и увеличить их количество.</li>
+                    </ol>
+                    <h3 class="title">Микрохирургические аспекты протезирования</h3>
+                    <p class="text">Это обширнейшие операции. Если описать, например, имплантацию субретинального (расположенного под сетчаткой) бионического глаза – нужно полностью сетчатку поднять, потом сделать обширную ретинэктомию (обрезать часть сетчатки), потом под сетчатку установить этот чип, затем сетчатку пришить ретинальными гвоздями, приклеить сетчатку лазеркоагуляцией и залить силиконовым маслом. Силиконовая тампонада необходима, иначе моментально появится ПВР (пролиферативная витреоретинопатия) и возникнет отслойка. Да, еще и хрусталика собственного не должно быть или он должен быть предварительно заменен на искусственную линзу. <br><br>Для операции нужны особые инструменты с щадящими силиконовыми наконечниками. Это совершенно непростая операция, кроме того еще нужен оро-фациальный хирург или ЛОР – они через кожу выводят электроды наружу. И получается такое устройство – чип внутри глаза, а в руках такой приборчик величиной с мобильный телефон, которым ты можешь изменять интенсивность сигнала, он соединяется с подкожными электродами. Одного офтальмолога-хирурга при операции недостаточно – нужна помощь других дисциплин, операция длится долгих 6 часов.</p>
+                </div>
+                <div class="articles-buttons">
+                    <div class="btn articles_detail-button">Все статьи</div>
+                    <div class="btn articles_detail-button">Врачам</div>
+                </div>
+                <div class="pagination-pages">
+                    <a href="#" class="prev-page">
+                        <img src="img/arrow-left.png">
+                        <p>Астигматизм — способы коррекции</p>
+                    </a>
+                    <a href="#" class="next-page">
+                        <p>Лазерная коррекция зрения SMILE или  ...</p>
+                        <img src="img/arrow-right.png">
+                    </a>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="wrapper">
+                <div class="row list">
+                    <div class="col-md-6 col-sm-4 col-xs-12 ">
+                        <h3>Мы на связи</h3>
+                        <a class="phone" href="tel:+7 (812) 409-40-92">(812) 409-40-92 </a>
+                        <ul class="contact-menu">
+                            <li class="address">
+                                <p>СПб, ул. Мытнинская д.1/20</p>
+                            </li>
+                            <li class="email">
+                                <a href="mailto:info@uvt-clinic.ru ">info@uvt-clinic.ru</a>
+                            </li>
+                        </ul>
+                        <div class="social-list">
+                            <a href="#" target="_blank"><img src="img/vk.png" alt=""></a>
+                            <a href="#" target="_blank"><img src="img/fb.png" alt=""></a>
+                            <a href="#" target="_blank"><img src="img/inst.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-8 col-xs-12">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                                <h3 class="footer-subtitle">Клиника ЮВТ</h3>
+                                <ul class="footer-menu">
+                                    <li>
+                                        <a href="about.html">О клинике</a>
+                                    </li>
+                                    <li>
+                                        <a href="team.html">Наши специалисты</a>
+                                    </li>
+                                    <li>
+                                        <a href="timetable.html">Расписание приема</a>
+                                    </li>
+                                    <li>
+                                        <a href="price.html">Стоимость</a>
+                                    </li>
+                                    <li>
+                                        <a href="jobs.html">Вакансии</a>
+                                    </li>
+                                    <li>
+                                        <a href="questionnaire.html">Оценка качества обслуживания</a>
+                                    </li>
+                                    <li>
+                                        <a href="articles.html">Полезная информация</a>
+                                    </li>
+                                    <li>
+                                        <a href="testimonials.html">Отзывы</a>
+                                    </li>
+                                    <li>
+                                        <a href="contacts.html">Контакты</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <h3 class="footer-subtitle">Услуги</h3>
+                                <ul class="footer-menu">
+                                    <li>
+                                        <a href="services_category.html">Лечение катаракты</a>
+                                    </li>
+                                    <li>
+                                        <a href="services_category.html">Лечение глаукомы</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="services_category.html">Лечение астигматизма</a>
+                                    </li>
+                                    <li>
+                                        <a href="services_category.html">Лечение пресбиотии</a>
+                                    </li>
+                                    <li>
+                                        <a href="services_category.html">Лечение гиперметропии</a>
+                                    </li>
+                                    <li>
+                                        <a href="services_category.html">Замена хрусталика</a>
+                                    </li>
+                                    <li>
+                                        <a href="services_category.html">Имплантация факичных линз</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-btm">
+            <div class="wrapper">
+                <ul class="footer-info">
+                    <li><p class="copy-text"><span class="copy">&copy;</span>Клиника ЮВТ, 2018</p></li>
+                    <li><a href="politics.html">Политика конфиденциальности</a></li>
+                    <li><a href="#">Карта сайта</a></li>
+                    <li class="siluet-li">
+                        <p class="siluet">
+                            <a target="_blank" href="http://siluetstudio.com">Веб-студия «Силуэт»: создание сайтов</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+    <div id="job-modal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Заголовок модального окна -->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="img/modal-close.png"></button>
+                    <p class="modal-subtitle">Отклик на вакансию</p>
+                    <h3 class="modal-title">Медицинская сестра (офтальмология)</h3>
+                </div>
+                <!-- Основное содержимое модального окна -->
+                <div class="modal-body">
+                    <label for="name2">ФИО<span>*</span></label>
+                    <input class="modal-input" id="name2" placeholder="Как к вам обратиться?">
+                    <label for="organization2">Телефон<span>*</span></label>
+                    <input class="modal-input" id="organization2" placeholder="Ваш номер телефона">
+                    <label for="organization2">E-mail</label>
+                    <input class="modal-input" id="organization2" placeholder="Электронная почта для связи">
+                    <label for="organization2">Комментарий</label>
+                    <textarea class="modal-input" id="organization2" placeholder="Дополнительные сведения"></textarea>
+
+                    <label for="msg">Файл (не более 50Мб)</label>
+                    <div class="files">
+                        <div class="file-input">
+                            <div class="file_upload">
+                                <div>Файл не выбран</div>
+                                <button>Обзор</button>
+                                <input type="file">
+                            </div>
+                        </div>
+                    </div>
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        <div class="checkbox__text">Я принимаю <a href="politics.html">Политику
+                            конфиденциальности</a></div>
+                    </label>
+                    <div class="btns">
+                        <a href="#" class="btn btn-mod"><img src="img/mail.png">Отправить</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="timetable-modal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Заголовок модального окна -->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="img/modal-close.png"></button>
+                    <h3 class="modal-title">Запись на прием</h3>
+                </div>
+                <!-- Основное содержимое модального окна -->
+                <div class="modal-body">
+                    <label for="name2">Ваше имя<span>*</span></label>
+                    <input class="modal-input" id="name2" placeholder="Как к вам обратиться?">
+                    <label for="organization2">Телефон<span>*</span></label>
+                    <input class="modal-input" id="organization2" placeholder="Ваш номер телефона">
+                    <label for="organization2">E-mail</label>
+                    <input class="modal-input" id="organization2" placeholder="Электронная почта для связи">
+                
+
+                    <label for="organization3">Специалист</label>
+                    <select name="select" id="organization3">
+                        <option value="sp1">Шлякман Роман Борисович</option>
+                        <option value="sp2" selected>Шлякман Роман Борисович</option>
+                        <option value="sp3">Шлякман Роман Борисович</option>
+                    </select>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <label for="organization2">Время</label>
+                            <input class="modal-input input-time" id="organization2" type="time">
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <label for="organization2">Дата</label>
+                            <input class="modal-input input-date datepicker" id="organization2">
+                        </div>
+                    </div>
+
+                    
+                    <label for="organization2">Комментарий</label>
+                    <textarea class="modal-input" id="organization2" placeholder="Дополнительная информация"></textarea>
+                    
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        <div class="checkbox__text">Я принимаю <a href="politics.html">Политику
+                            конфиденциальности</a></div>
+                    </label>
+                    <div class="btns">
+                        <a href="#" class="btn btn-mod"><img src="img/mail.png">Отправить</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="appointment-modal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Заголовок модального окна -->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="img/modal-close.png"></button>
+                    <h3 class="modal-title">Запись на прием</h3>
+                </div>
+                <!-- Основное содержимое модального окна -->
+                <div class="modal-body">
+                    <label for="name2">Ваше имя<span>*</span></label>
+                    <input class="modal-input" id="name2" placeholder="Как к вам обратиться?">
+                    <label for="organization2">Телефон<span>*</span></label>
+                    <input class="modal-input" id="organization2" placeholder="Ваш номер телефона">
+                    <label for="organization2">E-mail</label>
+                    <input class="modal-input" id="organization2" placeholder="Электронная почта для связи">
+                    <label for="organization2">Комментарий</label>
+                    <textarea class="modal-input" id="organization2" placeholder="Дополнительная информация"></textarea>
+                    
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        <div class="checkbox__text">Я принимаю <a href="politics.html">Политику
+                            конфиденциальности</a></div>
+                    </label>
+                    <div class="btns">
+                        <a href="#" class="btn btn-mod"><img src="img/mail.png">Отправить</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="mail-modal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Заголовок модального окна -->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="img/modal-close.png"></button>
+                    <h3 class="modal-title">Сообщение для клиники ЮВТ</h3>
+                </div>
+                <!-- Основное содержимое модального окна -->
+                <div class="modal-body">
+                    <label for="name2">Ваше имя<span>*</span></label>
+                    <input class="modal-input" id="name2" placeholder="Как к вам обратиться?">
+                    <label for="organization2">Телефон<span>*</span></label>
+                    <input class="modal-input" id="organization2" placeholder="Ваш номер телефона">
+                    <label for="organization2">E-mail</label>
+                    <input class="modal-input" id="organization2" placeholder="Электронная почта для связи">
+                    <label for="organization2">Текст сообщения</label>
+                    <textarea class="modal-input" id="organization2" placeholder="Что вы хотели сказать?"></textarea>
+                    
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        <div class="checkbox__text">Я принимаю <a href="politics.html">Политику
+                            конфиденциальности</a></div>
+                    </label>
+                    <div class="btns">
+                        <a href="#" class="btn btn-mod"><img src="img/mail.png">Отправить</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="call-modal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Заголовок модального окна -->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="img/modal-close.png"></button>
+                    <h3 class="modal-title">Заказ звонка</h3>
+                </div>
+                <!-- Основное содержимое модального окна -->
+                <div class="modal-body">
+                    <label for="name2">Ваше имя<span>*</span></label>
+                    <input class="modal-input" id="name2" placeholder="Как к вам обратиться?">
+                    <label for="organization2">Телефон<span>*</span></label>
+                    <input class="modal-input" id="organization2" placeholder="Ваш номер телефона">
+
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        <div class="checkbox__text">Я принимаю <a href="politics.html">Политику
+                            конфиденциальности</a></div>
+                    </label>
+                    <div class="btns">
+                        <a href="#" class="btn btn-mod"><img src="img/mail.png">Заказать звонок</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/jquery.justified.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.maskedinput.js"></script>
+<script type="text/javascript" src="css/fancybox/jquery.fancybox.js"></script>
+<script src="js/jquery.scrollbar.js"></script>
+<script src="js/jquery.justifiedGallery.js"></script>
+<script src="js/justifiedGallery.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/truncate.js"></script>
+<script src="js/jquery.selectric.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/jquery.timepicker.min.js"></script>
+<script src="js/daterangepicker.js"></script>
+<script src="js/truncate.min.js"></script>
+<script src="js/jquery-ready.js"></script>
+</body>
+</html>
